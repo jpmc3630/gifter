@@ -1,0 +1,162 @@
+body {
+    background-color:white;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.container {
+    padding: 2%;
+}
+
+.h1one {
+    float:left; 
+    color:aquamarine; 
+    background-color:black;
+}
+
+.h1two {
+    float:left;
+    color:white; 
+    background-color:black;
+}
+
+.byline {
+    position:relative; 
+    float:none; 
+    top:13px; 
+    width: auto; 
+    left: 10px;
+    font-weight:bold;
+}
+.header {
+    display:block;
+}
+
+.gif-button {
+    margin: 0 10px 10px 0; 
+    background-color: white; 
+    color: black;
+}
+
+.loading-image {
+    position:relative; 
+    top: -2px; 
+    width: 20px; 
+    height: 20px;
+}
+.btn-dark:hover {
+    color:aquamarine;
+}
+
+.maker {
+    float: right; 
+    text-align: right;
+}
+
+
+#loading {
+    display:none; 
+    text-align:center;
+}
+
+#download-div {
+    text-align: center; 
+    display: none;
+}
+
+#text-to-add {
+    height: 33px; 
+    display: inline; 
+    width: 180px;
+}
+
+#booyah {
+    position: relative; 
+    top: -2px;
+}
+
+#gif-view{
+    float:left;
+}
+
+#buttonDiv {
+    clear: both;
+}
+
+#find-gif {
+    position:relative; 
+    top:-2px;
+}
+
+#gif-form {
+    padding: 10px 0 20px 0;
+}
+
+#preview {
+    display:block; 
+    margin: auto; 
+    padding:20px 0 10px 0;
+}
+
+#gif-input {
+    width: 200px; 
+    display:inline;
+}
+
+#font-size {
+    position: relative; 
+    top:-3px; 
+    height: 33px; 
+    width: 60px; 
+    display:inline;
+}
+
+#text-pos {
+    width: 100px; 
+    height: 33px; 
+    margin: 0 0 10px 0; 
+    font-size: 14px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        text-align:center;
+    }
+
+    .maker {
+        float:none;
+        text-align: center;
+    }
+
+    #gif-view{
+        float:none;
+
+    }
+
+    .header {
+        float:none;
+        text-align: center;
+    }
+
+    .h1one {
+        display:inline; 
+        float:none; 
+        color:aquamarine; 
+        background-color:black;
+    }
+    
+    .h1two {
+        display:inline; 
+        float:none; 
+        position:relative; 
+        left: -10px; 
+        color:white; 
+        background-color:black;
+    }
+
+    .byline {
+        float:none;
+        display:block;      
+    }
+
+}

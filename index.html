@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gifshot/0.3.2/gifshot.js"></script>
+    <script src="https://cdn.rawgit.com/buzzfeed/libgif-js/master/libgif.js"></script>
+    
+    <script src="./assets/javascript/jscolor.js"></script>
+    
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    
+    <title>Gifter</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1 class = "h1one">&nbsp; Gif </h1>
+            <h1 class = "h1two">ter &nbsp;</h1>
+            <p class="byline">Give the gift that keeps on giffing!</p>
+            <br>
+        </div>
+
+        <div id="buttonDiv"></div>
+            
+            <form id="gif-form">
+                
+            
+            <label for="gif-input">Search</label>
+            <input type="text" id="gif-input" class="form-control form-control-sm">
+        
+            <input id="find-gif" type="submit" class="btn btn-dark btn-sm" value="GIF Search">
+
+            </form>
+            
+        <div class="maker">
+            
+            <form>
+                <input id="chosen-value" value="#7fffd4" style="display:none;">
+                
+                <input class="form-control form-control-sm" type="text" id="font-size" value="22px">
+
+                <select class="custom-select" id="text-pos">
+                    <option value="top">Top</option>
+                    <option value="center">Middle</option>
+                    <option value="bottom" selected>Bottom</option>
+                </select>
+
+                <button style="position:relative; top: -5px" class="btn btn-dark btn-sm jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'}">
+                    Text colour
+                </button>
+                <br>
+                <input class="form-control form-control-sm" type="text" id="text-to-add" value="Avi is awesome!">
+
+                <input type="button" class="btn btn-dark btn-sm" id="booyah" value="Add Text">
+            </form>
+
+            <img id="preview" src="./assets/images/initial.gif" alt="Preview">
+            
+            <div id="loading">Loading&nbsp;<img class="loading-image" src="https://media0.giphy.com/media/131tNuGktpXGhy/200.gif"></div>
+            
+            <div id="download-div">
+                <input type="button" id="downloadbutton" class="btn btn-dark btn-sm" value="Download">
+            </div>
+                 
+        </div>
+
+        <div id="gif-view"></div>
+
+        <div class="stage" style="display: none">
+                    <img id="peek" src=""/>
+            
+            <div id="frames"></div> 
+        </div>
+
+    </div> 
+       
+</body>
+<script src="./assets/javascript/app.js"></script>
+</html>
