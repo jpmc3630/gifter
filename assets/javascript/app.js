@@ -116,8 +116,9 @@ $("#text-to-add").on("click", function(event) {
 $("#downloadbutton").on("click", function(event) {
 
     let item = $('#preview').attr('src');
-    let a = document.createElement('a')
-    a.href = item
+    let a = document.createElement('a');
+    a.href = item;
+    console.log(item);
     a.download = 'GIFter.gif';
     document.body.appendChild(a)
     a.click()
