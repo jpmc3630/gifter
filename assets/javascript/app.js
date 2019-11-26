@@ -71,7 +71,6 @@ function gifBuildFunction() {
     let myNodeList = document.querySelectorAll("canvas");
     // Turn 'canvas' node list into an array
    let nodeListArr = [];
-    console.log(myNodeList);
     for (data of myNodeList) nodeListArr.push(data);
 
     // Run the gifshot create gif from canvas node array
@@ -116,13 +115,7 @@ $("#text-to-add").on("click", function(event) {
 $("#downloadbutton").on("click", function(event) {
 
     let item = $('#preview').attr('src');
-    let a = document.createElement('a');
-    a.href = item;
-    console.log(item);
-    a.download = 'GIFter.gif';
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
+    download(item, "GIFter.gif", "image/gif");
 });
 
 
@@ -170,7 +163,6 @@ function RunSearch() {
     })
     .then(function(response) {
         
-        console.log(response);
         var results = response.data;
 
         if (results.length == 0) {
