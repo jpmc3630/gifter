@@ -8,12 +8,7 @@ GIFs are a popular digital present for birthdays, etc, and customising extends t
 GIFfing on the bus or during other time-plenty situations is a must. The SPA is fully mobile responsive.
 
 # Dependencies 
-GIFter relies on GIFlib, GIFshot and jscolor javascript libraries.
+GIFter relies on GIFlib, GIFshot, JScolor and Download.js javascript libraries.
 
 GIFshot adds the text and makes the final GIF, however, it will not accept an animated GIF as it's starting point.
 GIFlib is used to split the GIF into canvas frames in the DOM, and that node tree is passed to GIFshot.
-
-# Known bug
-Larger GIFs will cause a network error when download button is clicked in some browsers (chrome). 
-Manual saving of the image works fine.
-This will be fixed soon!
