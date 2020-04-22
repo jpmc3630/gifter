@@ -5,7 +5,7 @@ The idea was to make a one stop, quick to use, SPA for making a custom GIF to GI
 GIFs are a popular digital present for birthdays, etc, and customising extends that love a little further ;D
 
 # Mobile responsive
-GIFfing on the bus or during other time-plenty situations is a must. The SPA is fully mobile responsive.
+GIFfing on the bus or during other time-plenty situations is a must. The SPA is mobile responsive.
 
 # Dependencies 
 GIFter relies on GIFlib, GIFshot, JScolor and Download.js javascript libraries.
